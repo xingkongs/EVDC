@@ -148,7 +148,6 @@ function openmodal(thisone){
         $span.eq(2).click();
     }
     if(window.innerWidth<1440) {
-        console.log(1);
         $("#collapse-head").addClass("fadeOutUp");
     }
     $("#doc-modal-3").modal({closeViaDimmer: 0, width: 480,height:716});

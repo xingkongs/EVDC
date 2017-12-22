@@ -503,10 +503,7 @@ ul li{
     padding: 18px 28px;
     margin-top:180px;
     border-top:1px solid;
-    border-image:linear-gradient(to right,#ff0031,#720083,#00d6ff) 30 30;
-    border-right-color:transparent;
-    border-left-color:transparent;
-    border-bottom-color:transparent;
+    border-image:linear-gradient(to right,#ff0031,#720083,#00d6ff) 30 0 0 0;
 }
 .copyright p {
     text-align: center;
@@ -651,6 +648,7 @@ ul li{
     line-height:40px;
     width:130px;
     color:#000;
+    cursor:pointer;
 }
 .am-modal .modal_option.info{
     height:160px;
