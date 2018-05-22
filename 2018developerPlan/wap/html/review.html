@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寻找明日之星！2018未来汽车开发者大会优秀项目招募</title>
+    <meta name="description" content="2018未来汽车开发者大会明日之星项目争夺赛等你来加入，期间，各大投资人会竞投出优秀的商业项目，大会还设定各种精美的奖项，更有现金大奖等你来拿，点击项目报名加入吧。">
+    <meta name="keywords" content="明日之星,评审报名">
+    <link rel="dns-prefetch" href="//www.d1ev.com">
+    <link rel="stylesheet" href="../js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <script>
+        !(function(){
+            if(!navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                var search=window.location.search;
+                var hash=window.location.hash;
+                window.location.href = '../../starOfTomorrow.html'+search+hash;
+            } else { console.log("明日之星-mobile")}
+        })();
+    </script>
+</head>
+<body>
+<form name="fm" autocomplete="off" class="box" method="post" id="form">
+    <!--头部开始-->
+    <div class="title">
+        <img src="../image/arrow.png" alt="" onclick="history.go(-1)">
+        <p>评审团报名</p>
+    </div>
+    <!--头部结束-->
+
+    <!--主体部分开始-->
+    <div class="main">
+        <div class="team">
+            <span>*</span>
+            <p>公司名称</p>
+        </div>
+        <input class="inpTeam write" type="text" name="unitName">
+        <div class="team">
+            <span>*</span>
+            <p>公司简介</p>
+        </div>
+        <textarea id="doc-size" class="text write" cols="30" rows="10" minlength="8" name="companyProfile"></textarea>
+        <div class="team">
+            <span>*</span>
+            <p>资金规模 (亿)</p>
+        </div>
+        <input class="inpTeam write capital" type="text" name="capitalScale">
+        <div class="team">
+            <span>*</span>
+            <p>投资偏好</p>
+        </div>
+        <input class="inpTeam write hobby" type="text" name="investmentPre">
+        <div class="team">
+            <span>*</span>
+            <p>投资案例</p>
+        </div>
+        <textarea class="inpPractice write case" name="investmentCase"></textarea>
+        <p class="tip"></p>
+    </div>
+    <!--主体部分结束-->
+    <div class="kong"></div>
+
+    <!--底部开始-->
+    <div class="main">
+        <div class="team">
+            <span>*</span>
+            <p>联系人</p>
+        </div>
+        <input class="inpTeam name write" type="text" name="name">
+        <div class="team">
+            <span>*</span>
+            <p>联系电话</p>
+        </div>
+        <input class="inpTeam tel write" type="text" name="tel">
+        <div class="team">
+            <span>*</span>
+            <p>E-mail</p>
+        </div>
+        <input class="inpTeam mail write" type="text" name="mail">
+        <p class="tip" style="margin-bottom: 0">必要项：形象照片/logo请发送邮箱至konglingwei@d1ev.com</p>
+        <input type="hidden" name="type" value="6"/>
+        <input type="hidden" name="istel" value="1"/>
+        <input type="hidden" id="filename02" name="pj_bp2">
+        <input type="hidden" id="filename03" name="gnevId" value="1">
+
+        <!-- Large modal -->
+        <button type="button" class="btn btn-primary submit" data-toggle="modal">提交</button>
+
+        <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="sub success" style="display: block">
+                        <div class="label">
+                            <img src="../image/btn-success.png" alt="">
+                        </div>
+                        <p>提交成功</p>
+                    </div>
+                    <div class="sub error" style="display: none">
+                        <div class="label">
+                            <img src="../image/btn-err.png" alt="">
+                        </div>
+                        <p>提交失败</p>
+                    </div>
+                    <img class="border1" src="../image/border1.png" alt="">
+                    <img class="border2" src="../image/border2.png" alt="">
+                    <img class="border3" src="../image/border3.png" alt="">
+                    <img class="border4" src="../image/border4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部结束-->
+</form>
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="//cdn-fs.d1ev.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="//cdn-fs.d1ev.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn-fs.d1ev.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="//cdn-fs.d1ev.com/ajax/libs/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="../js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<script>
+    //    鼠标点击提交时
+    $(".submit").click(function () {
+//        公司名称
+        var $inpTeam = $(".inpTeam").val();
+//        公司简介
+        var $text = $(".text").val();
+//        资金规模
+        var $capital = $(".capital").val();
+//        投资偏好
+        var $hobby = $(".hobby").val();
+//       投资案例
+        var $case = $(".case").val();
+//         联系人
+        var $name = $(".name").val();
+//         电话
+        var $tel = $(".tel").val();
+        var re2 = /^1[34578][0-9]{9}$/;
+//         邮箱
+        var $mail = $(".mail").val();
+        var re1 = /^\w+@[a-z0-9]+\.[a-z]+$/i;
+
+
+        if (($(".write").eq(0).val()) == "") {
+            alert("请填写公司名称！");
+            $(".write").eq(0).css("border", "1px solid #FF3636")
+            $("html,body").scrollTop(0);
+            return false;
+        }
+        if (($(".write").eq(1).val()) == "") {
+            $(".write").eq(1).css("border", "1px solid #FF3636")
+            $("html,body").scrollTop(0);
+            alert("请填写公司简介！");
+            return false;
+        }
+        if (($(".write").eq(2).val()) == "") {
+            $(".write").eq(2).css("border", "1px solid #FF3636")
+            $("html,body").scrollTop(0);
+            alert("请填写资金规模！");
+            return false;
+        }
+        if (($(".write").eq(3).val()) == "") {
+            $(".write").eq(3).css("border", "1px solid #FF3636")
+            $("html,body").scrollTop(0);
+            alert("请填写投资偏好！");
+            return false;
+        }
+        if (($(".write").eq(4).val()) == "") {
+            $(".write").eq(4).css("border", "1px solid #FF3636")
+            $("html,body").scrollTop(1040);
+            alert("请填写投资案例！");
+            return false;
+        }
+        if (($(".write").eq(5).val()) == "") {
+            $(".write").eq(5).css("border", "1px solid #FF3636")
+            alert("请填写联系人！");
+            return false;
+        }
+        if (!re2.test($tel)) {
+            $(".write").eq(6).css("border", "1px solid #FF3636")
+            alert("请填写正确的联系电话！");
+            return false;
+        }
+        if (!re1.test($mail)) {
+            $(".write").eq(7).css("border", "1px solid #FF3636")
+            alert("请填写正确的E-mail！");
+            return false;
+        }
+        else {
+            var $data = $("#form").serialize();
+        }
+
+        $.ajax({
+            type: "post",
+            // url: "https://www.easy-mock.com/mock/5aeac115c186102e067af3ea/example_copy/easymoke",
+            url:"//www.d1ev.com/gnev/project/save",
+            dataType: "json",
+            data: $data,
+            success: function (res) {
+                // console.log(res.success);
+                if (res.success) {
+                    $(".sub").css("display", "none");
+                    $(".success").css("display", "block");
+                    $('#exampleModal').modal('toggle');
+
+                    function goTo() {
+                        window.location.href = 'tomorrow.html'
+                    }
+
+                    setInterval(goTo, 3000)
+
+
+                } else {
+                    $(".sub").css("display", "none");
+                    $(".error").css("display", "block");
+                    $('#exampleModal').modal('toggle')
+                }
+            }
+        });
+    })
+
+    $(function () {
+        $(".write").focus(function (){
+            if ($(this).val() !== '') {
+                $(this).css("border", "1px solid #cbcbcb");
+            } else {
+                $(this).css("border", "1px solid #FF3636")
+            }
+
+        })
+        $(".write").blur(function (){
+            $(this).css("border", "1px solid #cbcbcb")
+        })
+
+    })
+</script>
+<!--微信 jssdk-->
+<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!--微信分享-->
+<script type="text/javascript">
+    $.ajax({
+        url: '//www.d1ev.com/upload/file/jssdk_signpackage', //获取微信 jssdk 签名信息
+        type: 'POST',
+        dataType: 'json',
+        data: {'share_url': window.location.href}, //当前页面 URL
+        success: function ($data) {
+            //console.log($data); //调试返回数据
+            if ($data.appId !== undefined) {
+                var shareData = {
+                    title: document.title, //标题
+                    desc: '2018未来汽车开发者大会明日之星项目争夺赛等你来加入，期间，各大投资人会竞投出优秀的商业项目，大会还设定各种精美的奖项，更有现金大奖等你来拿，点击项目报名加入吧。', //描述
+                    link: $data.url, //URL，及 share_url
+                    imgUrl: window.location.origin + '/special/2018developerPlan/wap/image/m-share.png' //图标
+                };
+                wx.config({
+                    debug: false,
+                    appId: $data.appId,
+                    timestamp: $data.timestamp,
+                    nonceStr: $data.nonceStr,
+                    signature: $data.signature,
+                    jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                });
+                wx.ready(function () {
+                    wx.onMenuShareTimeline(shareData);
+                    wx.onMenuShareAppMessage(shareData);
+                    wx.onMenuShareQQ(shareData);
+                    wx.onMenuShareWeibo(shareData);
+                    wx.onMenuShareQZone(shareData);
+                });
+            }
+        }
+    });
+</script>
+<div id="footer-analysis-3rd" style="display: none;">
+    <script type="text/javascript" src="//www.d1ev.com/src/assets/1.0.0/analysis.3rd.js?v=2018l"></script>
+</div>
+
+</body>
+</html>

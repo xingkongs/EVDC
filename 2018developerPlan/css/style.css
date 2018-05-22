@@ -1,0 +1,125 @@
+main .banner{
+    height:670px;
+    background: url("../images/indest-banner.png") no-repeat center;
+}
+main .wrapped>.title{
+    width:23.48%;
+    max-width:270px;
+}
+main .wrapped>.content{
+    width:76.52%;
+    max-width:880px;
+    padding-left:36px;
+}
+
+#information{
+    padding-top:100px;
+   
+}
+#information p{
+    font-size:18px;
+    line-height: 2;
+}
+
+#activities{
+    padding-top:80px;
+}
+#activities .content li{
+    float:left;
+    max-width:390px;
+    max-height:260px;
+    overflow: hidden;
+}
+#activities  li:hover a img {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+#activities .content li:nth-child(odd){
+    margin-right:60px;
+}
+#activities .content li:nth-child(1),#activities .content li:nth-child(2){
+    margin-bottom:60px;
+}
+#agenda{
+    padding-top:140px;
+    margin-bottom:80px;
+}
+.agenda_list{
+    width:320px;
+    min-height: 530px;
+    padding-top:30px;
+    border-right:3px solid transparent;
+    border-image: linear-gradient( #0071ba, #1b1464) 30 30;
+}
+.agenda_list li{
+    position: relative;
+    max-height: 206px;
+}
+.agenda_list li:nth-of-type(odd){
+    text-align: left;
+    padding-right:45px;
+}
+.agenda_list li:nth-of-type(even){
+    padding-left:45px;
+    right:-320px;
+}
+.agenda_list li:before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:50px;
+    height:50px;
+    background:url("../images/indest-times.png") no-repeat center;
+}
+.agenda_list li:nth-of-type(odd):before{
+    right: -21px;
+    top:10px;
+}
+.agenda_list li:nth-of-type(even):before{
+    left: -21px;
+    top:10px;
+    transform: rotate(-180deg);
+}
+
+.agenda_list .data{
+    font-family: medium;
+    display:inline-block;
+    width:208px;
+    font-size:48px;
+    line-height: 1;
+    text-align: center;
+    color:#fff;
+    position: relative;
+}
+.agenda_list li:nth-of-type(odd) .data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    right:-50px;
+    top:2px;
+    width:51px;
+    height:45px;
+    background: url("../images/linesbm.png") no-repeat;
+}
+.agenda_list li:nth-of-type(even) .data:after{
+    content:'';
+    display: block;
+    position: absolute;
+    right:-50px;
+    top:2px;
+    width:51px;
+    height:45px;
+    background: url("../images/linesbm.png") no-repeat;
+}
+.agenda_list .time{
+    font-family: medium;
+    display:inline-block;
+    font-size:44px;
+    line-height: 50px;
+    text-align: center;
+    color:#4417ff;
+}
+.agenda_list p{
+    font-size:24px;
+    line-height:1.5;
+}
