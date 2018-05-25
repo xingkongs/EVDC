@@ -138,6 +138,12 @@ var data = {
             "href": "javascript:;"
         },
         {
+            "type":"company",
+            "name": "青铜资本",
+            "image": "./images/c9.png",
+            "href": "javascript:;"
+        },
+        {
             "type":"person",
             "name": "新浪汽车",
             "image": "./images/Starpng_people.png",

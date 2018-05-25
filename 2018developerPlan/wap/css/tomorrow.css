@@ -104,6 +104,9 @@ header{
 .ziben>li:nth-of-type(3n+3){
     margin-right: 0;
 }
+.ziben>li img{
+    background:#fff;
+}
 .ziben>li>p{
     text-align: center;
     font-size: 28px;

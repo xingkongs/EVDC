@@ -299,6 +299,7 @@ main .content{
     max-width:178px;
     margin-right:50px;
     margin-bottom:50px;
+    background: #fff;
 }
 #expert li.parter_company{
     display: list-item;
