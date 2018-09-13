@@ -1,0 +1,225 @@
+*,:before,:after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+.wrapped{
+    width:91.73%;
+    max-width: 414px;
+    margin:0 auto;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+ul,li,ol,ol>li>ol, ol>li>ul, ul>li>ol, ul>li>ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+p,*+p{
+    margin:0;
+    line-height: 1;
+}
+img{
+    user-select: none;
+}
+.clearfix{
+    *zoom:1;
+}
+section{
+    padding:0.5px 0;
+}
+body,.am-with-topbar-fixed-top{
+    padding-top:50px;
+    max-width:414px;
+    margin:0 auto;
+    background: #25002E;
+}
+/*header*/
+header{
+    background: transparent;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.am-topbar {
+    margin-bottom: 0;
+    border-image: linear-gradient(to right,#ab00b0 ,#7c12b7, #7df3dc, #25002e) 0 0 30 0;
+    background: transparent;
+    transition: all 0.6s ease-in-out;
+}
+header .am-container,header .am-dropdown-content{
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border: none;
+}
+.am-topbar-fixed-top a {
+    color: #fff;
+}
+.am-nav>li a {
+    padding: 0.6em 2em;
+    font-size: 15px;
+}
+.am-nav>li>a:focus, .am-nav>li>a:hover,.am-nav>li.am-active>a, .am-nav>li.am-active>a:focus, .am-nav>li.am-active>a:hover {
+    color: #fff;
+    background: #8a6239;
+    cursor: default;
+}
+header .am-topbar-collapse{
+    background: transparent;
+}
+header .am-dropdown-content{
+    background: rgba(253, 41, 164, 0.9);
+    padding: 5px;
+}
+header ul.am-dropdown-content>li>a{
+    color:#fff;
+}
+ul.am-dropdown-content>li>a:focus, ul.am-dropdown-content>li>a:hover {
+    color: #fff;
+    background: #ad1c70;
+}
+.am-dropdown-content:after, .am-dropdown-content:before{
+    border-bottom-color: rgba(253, 41, 164, 0.9);
+}
+
+header .am-icon-caret-down{
+    position: absolute;
+    right: 32%;
+}
+header .am-topbar-btn{
+    background: transparent;
+    color:#fff!important;
+}
+header .am-topbar-brand img{
+    color: #fff;
+    max-height: 20px;
+    width: auto;
+}
+header .am-topbar a {
+    color: #fff;
+}
+header .am-topbar-nav img{
+    width:auto;
+    height:35px;
+}
+
+.foot--wrapper{
+    margin-top:45px;
+}
+.foot--wrapper .am-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid;
+    border-image: linear-gradient(to right,#ab00b0 ,#7c12b7, #7df3dc, #25002e) 30 0 0 0;
+}
+.foot--wrapper .foot--list {
+    margin: 0 auto;
+    display:table;
+}
+.foot--wrapper a {
+    padding: 0 20px;
+    position: relative;
+    font-size: 14px;
+    color: #949494;
+}
+.foot--wrapper a:last-of-type {
+    padding: 0 20px;
+    position: relative;
+    font-size: 14px;
+    color:#949494;
+}
+.foot--wrapper a:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 14px;
+}
+.foot--wrapper a:hover{
+    color:#fd29a4;
+}
+.foot--wrapper .foot--copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #949494;
+    padding: 20px 5.3% 40px;
+}
+.foot--wrapper .foot--copyright_a {
+    color: #787878;
+    padding: 0 5px;
+}
+
+.goTop{
+    width:50px;
+    position: fixed;
+    right:20px;
+    bottom:100px;
+    font-size:12px;
+}
+.goTop li{
+    opacity: 0;
+}
+.goTop li img{
+    width:50px;
+    height:50px;
+}
+
+/*alert*/
+.alert--success{
+    display: none;
+    padding:18px;
+    width:150px;
+    height:100px;
+    background: #25012e;
+    font-size:15px;
+    color:#fff;
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+.alert--success img{
+    max-height:33px;
+    margin-bottom:13px;
+}
+.my_alert {
+    padding: 15px 25px;
+    position: fixed;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    z-index: 4;
+}
+
+.logo_title{
+    margin:35px 0;
+}
+.logo_title img{
+    max-height:60px;
+    min-width:260px;
+}
+section .logo_title{
+    margin-left:-6%;
+}
+section.news .logo_title,section.article .logo_title{
+    margin-left:0;
+}

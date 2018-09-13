@@ -1,0 +1,117 @@
+
+header li{
+    float:left;
+    width:auto;
+}
+header li a{
+    padding:0 15px;
+}
+main .banner{
+    width:100%;
+}
+main .title{
+    padding:45px 0;
+    text-align: center;
+}
+main .themes .title{
+    padding:50px 0 40px;
+}
+
+main .title .img--wrapper{
+    position: relative;
+}
+main .title img{
+    max-height:59px;
+    position: relative;
+    z-index: 2;
+}
+main .title .img--wrapper::before {
+    content:'';
+    display:block;
+    height:1px;
+    width: 20%;
+    background:linear-gradient(to left, #ab00b0 ,#7c12b7, #7df3dc, #25002e);
+    position: absolute;
+    top:50%;
+    right:60%;
+    transform: translateX(-60px);
+}
+main .title .img--wrapper::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20%;
+    background: linear-gradient(to right, #ab00b0 ,#7c12b7, #7df3dc, #25002e);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateX(60px);
+}
+main .title .img{
+    height:100%;
+}
+main .content{
+    text-align: center
+}
+#autoModel .content{
+    max-width:89.87%;
+    margin:0 auto;
+}
+#autoModel li{
+    float: left;
+    width:48.51%;
+    height:159px;
+    margin:0 2.96% 2.96% 0;
+    background: url("../images/Violet-2_1.png") no-repeat center;
+    background-size: contain;
+}
+#autoModel li:nth-of-type(2n+2){
+    margin-right:0;
+}
+#autoModel li img{
+    width:100%;
+}
+#autoModel li .p--wrapper{
+    height:32px;
+    background: url("../images/framemin.png") no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#autoModel li p{
+    font-size:13px;
+    color:#00ffff;
+}
+#map .content{
+
+}
+#map .content .img--wrapper img{
+    width:100%;
+}
+
+#join{
+    position:fixed;
+    right:20px;
+    bottom:160px;
+    width:50px;
+    height:50px;
+    z-index: 2;
+    background: url("../images/bmsj.png") no-repeat center;
+    background-size: contain;
+}
+.am-modal-dialog{
+    background: transparent;
+}
+.am-modal-hd .am-close{
+    opacity: 1;
+}
+.am-modal-hd .am-close img{
+    width: 100%;
+}
+.am-modal-bd{
+    padding:0;
+}
+.am-modal-bd .img--wrapper img{
+    width:100%;
+}

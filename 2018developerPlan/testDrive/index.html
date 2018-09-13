@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电动e夏超级试驾会</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/css/amazeui.min.css">
+    <link rel="stylesheet" href="//cdn-fs.d1ev.com/ajax/libs/animate.css/3.5.1/animate.css">
+    <link rel="stylesheet" href="css/common.css?v=20180628">
+    <link rel="stylesheet" href="css/style.css?v=20180628">
+    <script>
+        !(function(){
+            if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                var search=window.location.search;
+                var hash=window.location.hash;
+                window.location.href = 'index_mobile.html'+search+hash;
+            } else { console.log("电动e夏超级试驾会-PC")}
+        })();
+    </script>
+</head>
+<body>
+<header data-am-scrollspynav="{offsetTop: 45}" data-am-sticky id="collapse-head">
+    <nav class="wrapped clearfix">
+        <div class="am-fl">
+            <a href="//www.d1ev.com/" target="_blank">
+                <h1>第一电动网</h1>
+            </a>
+        </div>
+        <ul class="clearfix am-fr">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="#autoModel">试驾车型</a>
+            </li>
+            <li>
+                <a href="#map">场地路线</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="banner"></section>
+    <section id="autoModel" class="wrapped">
+        <div class="title">
+            <div class="img--wrapper">
+                <img src="images/test%20driving%20model.png?v=20180514" alt="">
+            </div>
+        </div>
+        <ul class="content clearfix">
+            <li>
+                <div class="img--wrapper">
+                    <img src="images/img_01.png" alt="">
+                </div>
+                <div class="p--wrapper">
+                    <p>路虎</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="map" class="wrapped">
+        <div class="title">
+            <div class="img--wrapper">
+                <img src="./images/route%20map.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="img--wrapper">
+                <img src="images/map.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="foot--wrapper">
+        <div class="am-container">
+            <div class="am-cf foot--list">
+                <a href="//www.d1ev.com/about/aboutus" class="am-fl">关于我们</a>
+                <a href="//www.d1ev.com/app/download" class="am-fl">客户端下载</a>
+                <a href="//www.d1ev.com/about/contact" class="am-fl">联系我们</a>
+                <a href="//www.d1ev.com/about/joinus" class="am-fl">加入我们</a>
+                <a href="//www.d1ev.com/about/agreement" class="am-fl">用户协议</a>
+                <a href="//www.d1ev.com/about/friendlink" class="am-fl">友情链接</a>
+                <a href="//www.d1ev.com/about/feedback" class="am-fl">意见反馈</a>
+            </div>
+            <div class="foot--copyright">
+                Copyright © 2010-2018 <a href="//www.d1ev.com" class="foot--copyright_a">第一电动网</a>　京ICP备14024261号　京ICP证160753号
+                <a href="//www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033163" target="_blank">
+                    <img style="margin-bottom:4px;" src="//cdn-fs.d1ev.com/d/file/default/ghs.png">京公网安备 11010502033163号</a>　广播电视节目制作经营许可证（京）字第06795号
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="goTop">
+    <a href="javascript:;" onclick="$('html,body').animate({scrollTop: 0}, 700);">
+        <div class="goTop_img">
+            <img style="display: none;" src="images/web-back.png" alt="">
+        </div>
+    </a>
+</section>
+<a href="https://jinshuju.net/f/AXYg8j" target="_blank">
+    <div id="join">
+        <img style="display: none;" src="images/web-sjbm.png" alt="项目报名">
+    </div>
+</a>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="//assets-cdn.d1ev.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="//assets-cdn.d1ev.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="js/dataList.js?v=erqreqwer"></script>
+<script src="js/template-web.js"></script>
+<script id="lists" type="text/html">
+    {{each list value i}}
+    {{if list.length}}
+    <li>
+        <a href="{{value.href}}" target="_blank">
+        <div class="img--wrapper">
+            <img src="{{value.image}}" alt="">
+        </div>
+        <div class="p--wrapper">
+            <p>{{value.name}}</p>
+        </div>
+        </a>
+    </li>
+    {{/if}}
+    {{/each}}
+</script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/blueimp-file-upload/9.17.0/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.iframe-transport.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.fileupload.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-file-upload/9.12.5/js/jquery.fileupload-process.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.fileupload-validate.min.js"></script>
+<script src="js/index.js?v=20180519adfab"></script>
+<!--<div id="footer-analysis-3rd" style="display: none;">-->
+    <!--<script type="text/javascript" src="//www.d1ev.com/src/assets/1.0.0/analysis.3rd.js?v=2018l"></script>-->
+<!--</div>-->
+</body>
+</html>
+</html>
