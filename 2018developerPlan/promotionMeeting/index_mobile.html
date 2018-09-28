@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>未来汽车供应商推介会</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/css/amazeui.min.css">
+    <link rel="stylesheet" href="//cdn-fs.d1ev.com/ajax/libs/animate.css/3.5.1/animate.css">
+    <link rel="stylesheet" href="wap/css/common.css?v=20180503">
+    <link rel="stylesheet" href="wap/css/openingForum.css?v=20180622">
+    <script>
+        !(function(){
+            if(!navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                var search=window.location.search;
+                var hash=window.location.hash;
+                window.location.href = 'index.html'+search+hash;
+            } else { console.log("未来汽车供应商推介会-WAP")}
+        })();
+    </script>
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="//m.d1ev.com"><img src="//m.d1ev.com/src/wap/images/wap_logo.png?v=2018abc" alt=""></a>
+        </h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-show-sm-only" data-am-collapse="{target: '#collapse-head'}">
+            <span class="am-sr-only">导航切换</span>
+            <i class="am-icon-bars"></i>
+        </button>
+        <div class="am-collapse am-topbar-collapse" id="collapse-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li>
+                    <a href="#agenda">会议议程</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <img class="banner" src="images/bannermin.png">
+    <section  id="agenda">
+        <div class="title">
+            <div class="img--wrapper">
+                <img src="images/tjhmin.png" alt="">
+            </div>
+        </div>
+        <div class="content wrapped">
+            <ul class="agenda_list" style="display: none;">
+                <li>
+                    <i class="am-icon-spinner am-icon-spin" style=" color:#fff; width: 20%; height: 20%; font-size: 20px; "></i>
+                </li>
+            </ul>
+            <div class="img--wrapper" >
+                <img style="width:100%;" src="images/agendamin.png" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="foot--wrapper">
+        <div class="am-container">
+            <div class="foot--copyright">
+                Copyright © 2010-2018 <a href="//www.d1ev.com" class="foot--copyright_a">第一电动网</a>　京ICP备14024261号　京ICP证160753号
+                <a href="//www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033163" target="_blank">
+                    <img style="margin-bottom:4px;" src="//cdn-fs.d1ev.com/d/file/default/ghs.png">京公网安备 11010502033163号</a>　广播电视节目制作经营许可证（京）字第06795号
+            </div>
+        </div>
+    </div>
+</footer>
+<section>
+    <ul class="goTop">
+        <li>
+            <a href="javascript:;" onclick="$('html,body').animate({scrollTop: 0}, 700);">
+                <img src="images/goTop.png" alt=""> </a>
+        </li>
+    </ul>
+</section>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="//assets-cdn.d1ev.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="//assets-cdn.d1ev.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="//assets-cdn.d1ev.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script>
+    $("#collapse-head").on("click",".am-nav>li>a",function(){
+        $("#collapse-head").siblings(".am-topbar-btn").click();
+    }).scrollspynav({speed:200,offsetTop:51});
+    $(document).on("scroll", function (e) {
+        if ($(this).scrollTop() > 200) {
+            $(".goTop li:last-of-type").css("opacity", "1");
+        } else {
+            $(".goTop li:last-of-type").css("opacity", "0");
+        }
+    });
+</script>
+<!--微信 jssdk-->
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!--微信分享-->
+<script type="text/javascript">
+    $.ajax({
+        url: '//www.d1ev.com/upload/file/jssdk_signpackage', //获取微信 jssdk 签名信息
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            'share_url': window.location.href
+        }, //当前页面 URL
+        success: function ($data) {
+            //console.log($data); //调试返回数据
+            if ($data.appId !== undefined) {
+                var shareData = {
+                    title: document.title, //标题
+                    link: $data.url, //URL，及 share_url
+                    imgUrl: window.location.origin + '/special/2018developerPlan/promotionMeeting/images/share.png' //图标
+                };
+                wx.config({
+                    debug: false,
+                    appId: $data.appId,
+                    timestamp: $data.timestamp,
+                    nonceStr: $data.nonceStr,
+                    signature: $data.signature,
+                    jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage',
+                        'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'
+                    ]
+                });
+                wx.ready(function () {
+                    wx.onMenuShareTimeline(shareData);
+                    wx.onMenuShareAppMessage(shareData);
+                    wx.onMenuShareQQ(shareData);
+                    wx.onMenuShareWeibo(shareData);
+                    wx.onMenuShareQZone(shareData);
+                });
+            }
+        }
+    });
+</script>
+<div id="footer-analysis-3rd" style="display: none;">
+    <script type="text/javascript" src="https://www.d1ev.com/src/assets/1.0.0/analysis.3rd.js?v=2018l"></script>
+</div>
+</body>
+</html>
