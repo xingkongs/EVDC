@@ -150,7 +150,7 @@ function openmodal(thisone){
     if(window.innerWidth<1440) {
         $("#collapse-head").addClass("fadeOutUp");
     }
-    $("#doc-modal-3").modal({closeViaDimmer: 0, width: 480,height:716});
+    $("#doc-modal-3").modal({closeViaDimmer: 0, width: 480});
 }
 function alerts (ele, str,time1,location) {
     var time=time1 || 2000;
